@@ -1,17 +1,14 @@
-
 const Main = document.querySelector(".main");
 
-Alerta ();
+Alerta();
 
-function Alerta () {
+function Alerta() {
   alert("ESSA PAGINA É FALSA");
-  MainPage ();
+  MainPage();
 }
 
-function MainPage () {
-
-    Main.innerHTML = 
-    `
+function MainPage() {
+  Main.innerHTML = `
 <div class="page">
     <nav >
         <div class="Navi-top">
@@ -185,14 +182,11 @@ function MainPage () {
         </div>
     </div>
 </div>
-    `
+    `;
 }
 
-
-function PaginaLogin () {
-
-    Main.innerHTML = 
-    `
+function PaginaLogin() {
+  Main.innerHTML = `
 <div class="page">
     <nav >
         <div class="Navi-top">
@@ -220,13 +214,11 @@ function PaginaLogin () {
     <Button onclick="signIn()">Login</Button>
     <Button onclick="PaginaSingUp()">Cadastrar-se</Button>
 </div>
-    `
+    `;
 }
 
-function PaginaSingUp () {
-
-  Main.innerHTML = 
-  `
+function PaginaSingUp() {
+  Main.innerHTML = `
 <div class="page">
   <nav >
       <div class="Navi-top">
@@ -257,44 +249,39 @@ function PaginaSingUp () {
   <Button onclick="signUp()">Login</Button>
   <Button onclick="PaginaLogin()">Cadastrar-se</Button>
 </div>
-  `
+  `;
 }
 
 function getFishes(event) {
+  let promise = axios.get("https://globo-fishing.herokuapp.com/fishes");
 
-  let promise = axios.get('https://globo-fishing.herokuapp.com/fishes');
-
-  promise.then((response)=>{
+  promise.then((response) => {
     console.log(response.data);
+  });
 
-  })
-
-  promise.catch((err)=>{
-      console.log(err);
-  })
+  promise.catch((err) => {
+    console.log(err);
+  });
 }
 
-
 function signIn() {
-
   email = document.querySelector("input.email").value;
   password = document.querySelector("input.password").value;
 
   const URL = "https://globo-fishing.herokuapp.com/sign-in";
-  const body = {email, password}
+  const body = { email, password };
 
-  let promise = axios.post(URL,body);
+  let promise = axios.post(URL, body);
 
-  promise.then(res => {
+  promise.then((res) => {
     window.location.href = "http://www.globo.com";
   });
-  promise.catch(err => {
+  promise.catch((err) => {
     alert(err);
   });
 }
 
 function signUp() {
-
   fullName = document.querySelector("input.fullName").value;
   email = document.querySelector("input.email").value;
   password = document.querySelector("input.password").value;
@@ -302,16 +289,16 @@ function signUp() {
   birthDate = document.querySelector("input.birthDate").value;
 
   const URL = "https://globo-fishing.herokuapp.com/sign-up";
-  const body = {fullName, email, password, confirmPassword, birthDate}
+  const body = { fullName, email, password, confirmPassword, birthDate };
 
-  let promise = axios.post(URL,body);
+  let promise = axios.post(URL, body);
 
-  console.log(body)
+  console.log(body);
 
-  promise.then(res => {
+  promise.then((res) => {
     window.location.href = "http://www.globo.com";
   });
-  promise.catch(err => {
+  promise.catch((err) => {
     alert(err);
   });
 }
