@@ -1,4 +1,5 @@
 const Main = document.querySelector(".main");
+const Login = document.querySelector(".login");
 
 Alerta();
 
@@ -11,25 +12,38 @@ function MainPage() {
   Main.innerHTML = `
 <div class="page">
     <nav >
-        <div class="Navi-top">
-            <img onclick="PaginaLogin()" src="./imgs/navMenu.jpg"/>
-            <a href="https://Globo.com">
-                <img src="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/header_svgs/header-grid-logo.svg"/>
-            </a>
-            <img onclick="PaginaLogin()" src="./imgs/Login.jpg"/>
-        </div>
-        <div class="menu">
-            <h2 class="vermelho"><a href="https://www.globo.com">g1</a></h2>
-            <h2 class="azul"><a href="https://www.globo.com">o globe</a></h2>
-            <h2 class="verde-escuro"><a href="https://www.globo.com">valor</a></h2>
-            <h2 class="verde"><a href="https://www.globo.com">ge</a></h2>
-            <h2 class="laranja-escuro"><a href="https://www.globo.com">cartola</a></h2>
-            <h2 class="vermelho-claro"><a href="https://www.globo.com">globoplay</a></h2>
-            <h2 class="laranja-escuro"><a href="https://www.globo.com">gshow</a></h2>
-            <h2 class=" "><a href="https://www.globo.com">quem</a></h2>
-            <h2 class="roxo"><a href="https://www.globo.com">receitas</a></h2>
-            <h2 class="verde-marinho"><a href="https://www.globo.com">giga gloob</a></h2>
-        </div>
+      <div class="Navi-top">
+        <img onclick="PaginaLogin()" src="./imgs/navMenu.jpg"/>
+          <a href="https://Globo.com">
+            <img src="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/header_svgs/header-grid-logo.svg"/>
+          </a>
+        <img onclick="PaginaLogin()" src="./imgs/Login.jpg"/>
+      </div>
+      <div class="Navi-topCelular">
+          <a href="https://Globo.com">
+            <img src="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/header_svgs/header-grid-logo.svg"/>
+          </a>
+        <img onclick="PaginaLogin()" src="./imgs/Login.jpg"/>
+      </div>
+      <div class="menu">
+          <h2 class="vermelho"><a href="https://www.globo.com">g1</a></h2>
+          <h2 class="azul"><a href="https://www.globo.com">o globe</a></h2>
+          <h2 class="verde-escuro"><a href="https://www.globo.com">valor</a></h2>
+          <h2 class="verde"><a href="https://www.globo.com">ge</a></h2>
+          <h2 class="laranja-escuro"><a href="https://www.globo.com">cartola</a></h2>
+          <h2 class="vermelho-claro"><a href="https://www.globo.com">globoplay</a></h2>
+          <h2 class="laranja-escuro"><a href="https://www.globo.com">gshow</a></h2>
+          <h2 class=" "><a href="https://www.globo.com">quem</a></h2>
+          <h2 class="roxo"><a href="https://www.globo.com">receitas</a></h2>
+          <h2 class="verde-marinho"><a href="https://www.globo.com">giga gloob</a></h2>
+      </div>
+        <div class="menuCelular">
+        <h2 class="vermelho"><a href="https://www.globo.com">g1</a></h2>
+        <h2 class="azul"><a href="https://www.globo.com">o globe</a></h2>
+        <h2 class="verde"><a href="https://www.globo.com">ge</a></h2>
+        <h2 class="vermelho-claro"><a href="https://www.globo.com">globoplay</a></h2>
+        <h2 class="laranja-escuro"><a href="https://www.globo.com">gshow</a></h2>
+      </div>
     </nav>
     <div class="add">
         <img onclick="getFishes()" src="https://previews.123rf.com/images/seamartini/seamartini1810/seamartini181000786/110426824-fishing-store-advertisement-retro-poster-rod-hooks-and-baits-big-fish-catch-vector-fisherman-tackles.jpg"/>
@@ -71,7 +85,7 @@ function MainPage() {
                   <p>1ª de 7 mortes entre Brasil e Paraguai faz 1 semana</p>
                 </a>
               </div>
-              <div>
+              <div class="sumirCelular">
                 <a href="https://Globo.com">
                   <img src="https://qxpidu.csb.app/reino.jpeg" />
                   <h1>Além do presidente</h1>
@@ -114,7 +128,7 @@ function MainPage() {
               </div>
           </div>
         </div>
-        <div class="right">
+        <div class="right sumirCelular">
             <div class="right1">
               <div class="cell">
                 <a href="https://Globo.com">
@@ -186,74 +200,58 @@ function MainPage() {
 }
 
 function PaginaLogin() {
-  Main.innerHTML = `
-<div class="page">
-    <nav >
-        <div class="Navi-top">
-            <img onclick="PaginaLogin()" src="./imgs/navMenu.jpg"/>
-            <a href="https://Globo.com">
-                <img src="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/header_svgs/header-grid-logo.svg"/>
-            </a>
-            <img onclick="PaginaLogin()" src="./imgs/Login.jpg"/>
-        </div>
-        <div class="menu">
-            <h2 class="vermelho"><a href="https://www.globo.com">g1</a></h2>
-            <h2 class="azul"><a href="https://www.globo.com">o globe</a></h2>
-            <h2 class="verde-escuro"><a href="https://www.globo.com">valor</a></h2>
-            <h2 class="verde"><a href="https://www.globo.com">ge</a></h2>
-            <h2 class="laranja-escuro"><a href="https://www.globo.com">cartola</a></h2>
-            <h2 class="vermelho-claro"><a href="https://www.globo.com">globoplay</a></h2>
-            <h2 class="laranja-escuro"><a href="https://www.globo.com">gshow</a></h2>
-            <h2 class=" "><a href="https://www.globo.com">quem</a></h2>
-            <h2 class="roxo"><a href="https://www.globo.com">receitas</a></h2>
-            <h2 class="verde-marinho"><a href="https://www.globo.com">giga gloob</a></h2>
-        </div>
-    </nav>
-    <Input required class="email" type="email" name="E-mail"></Input>
-    <Input required class="password" type="password" name="Password"></Input>
-    <Button onclick="signIn()">Login</Button>
-    <Button onclick="PaginaSingUp()">Cadastrar-se</Button>
+  Main.classList.add("sumir");
+  Login.classList.remove("sumir");
+  Login.innerHTML = `
+<div class="linha"></div>
+<div class="inputs">
+  <h1>CONTA GLOBO</h1>
+  <h2>Uma só conta para todos</h2>
+  <h2>os produtos Globo</h2>
+  <div><p>E-mail</p></div>
+  <Input required class="email" type="email" name="E-mail"></Input>
+  <div><p>Senha</p></div>
+  <Input required class="password" type="password" name="Password"></Input>
+  <Button class="botaoAzul" onclick="signIn()">ENTRAR</Button>
+  <div class="flex"> 
+    <p>Não tem conta?</p> 
+    <Button onclick="PaginaSingUp()">Cadastrar-se</Button> 
+  </div>
+  
 </div>
     `;
 }
 
 function PaginaSingUp() {
-  Main.innerHTML = `
-<div class="page">
-  <nav >
-      <div class="Navi-top">
-          <img onclick="PaginaLogin()" src="./imgs/navMenu.jpg"/>
-          <a href="https://Globo.com">
-              <img src="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/header_svgs/header-grid-logo.svg"/>
-          </a>
-          <img onclick="PaginaLogin()" src="./imgs/Login.jpg"/>
-      </div>
-      <div class="menu">
-          <h2 class="vermelho"><a href="https://www.globo.com">g1</a></h2>
-          <h2 class="azul"><a href="https://www.globo.com">o globe</a></h2>
-          <h2 class="verde-escuro"><a href="https://www.globo.com">valor</a></h2>
-          <h2 class="verde"><a href="https://www.globo.com">ge</a></h2>
-          <h2 class="laranja-escuro"><a href="https://www.globo.com">cartola</a></h2>
-          <h2 class="vermelho-claro"><a href="https://www.globo.com">globoplay</a></h2>
-          <h2 class="laranja-escuro"><a href="https://www.globo.com">gshow</a></h2>
-          <h2 class=" "><a href="https://www.globo.com">quem</a></h2>
-          <h2 class="roxo"><a href="https://www.globo.com">receitas</a></h2>
-          <h2 class="verde-marinho"><a href="https://www.globo.com">giga gloob</a></h2>
-      </div>
-  </nav>
+  Main.classList.add("sumir");
+  Login.classList.remove("sumir");
+  Login.innerHTML = `
+<div class="linha"></div>
+<div class="inputs">
+  <h1>CONTA GLOBO</h1>
+  <h2>Crie a sua conta única para todos</h2>
+  <h2>os produtos Globo</h2>
+  <div><p>Nome completo</p></div>
   <Input required class="fullName" type="text" name="Nome Completo"></Input>
+  <div><p>E-mail</p></div>
   <Input required class="email" type="email" name="E-mail"></Input>
+  <div><p>Senha ·  8 a 15 dígitos</p></div>
   <Input required class="password" type="password" name="Password"></Input>
-  <Input required class="confirmPassword" type="confirmPassword" name="confirmPassword"></Input>
-  <Input required class="birthDate" type="birthDate" name="Data de nascimento"></Input>
-  <Button onclick="signUp()">Login</Button>
-  <Button onclick="PaginaLogin()">Cadastrar-se</Button>
+  <div><p>Confirmar Senha</p></div>
+  <Input required class="confirmPassword" type="password" name="confirmPassword"></Input>
+  <div><p>Data de nascimento</p></div>
+  <Input required class="birthDate" type="birthDate" name="Data de nascimento" placeholder="dd/mm/yyyy"></Input>
+  <Button class="botaoAzul" onclick="signUp()">CADASTRAR</Button>
+  <div class="flex"> 
+    <p>Já tem uma conta?</p> 
+    <Button onclick="PaginaLogin()">Entre</Button>
+  </div>
 </div>
   `;
 }
 
 function getFishes(event) {
-  let promise = axios.get("https://globo-fishing.herokuapp.com/fishes");
+  let promise = axios.get("https://globo-fishing-back.onrender.com/fishes");
 
   promise.then((response) => {
     console.log(response.data);
@@ -265,10 +263,10 @@ function getFishes(event) {
 }
 
 function signIn() {
-  email = document.querySelector("input.email").value;
-  password = document.querySelector("input.password").value;
+  let email = document.querySelector("input.email").value;
+  let password = document.querySelector("input.password").value;
 
-  const URL = "https://globo-fishing.herokuapp.com/sign-in";
+  const URL = "https://globo-fishing-back.onrender.com/sign-in";
   const body = { email, password };
 
   let promise = axios.post(URL, body);
@@ -282,13 +280,13 @@ function signIn() {
 }
 
 function signUp() {
-  fullName = document.querySelector("input.fullName").value;
-  email = document.querySelector("input.email").value;
-  password = document.querySelector("input.password").value;
-  confirmPassword = document.querySelector("input.confirmPassword").value;
-  birthDate = document.querySelector("input.birthDate").value;
+  let fullName = document.querySelector("input.fullName").value;
+  let email = document.querySelector("input.email").value;
+  let password = document.querySelector("input.password").value;
+  let confirmPassword = document.querySelector("input.confirmPassword").value;
+  let birthDate = document.querySelector("input.birthDate").value;
 
-  const URL = "https://globo-fishing.herokuapp.com/sign-up";
+  const URL = "https://globo-fishing-back.onrender.com/sign-up";
   const body = { fullName, email, password, confirmPassword, birthDate };
 
   let promise = axios.post(URL, body);
